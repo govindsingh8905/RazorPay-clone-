@@ -8,11 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-2xl: 42rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --font-weight-bold: 700;
@@ -182,20 +180,17 @@
   .-top-32 {
     top: calc(var(--spacing) * -32);
   }
-  .-top-\[8rem\] {
-    top: calc(8rem * -1);
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
+  .top-\[3rem\] {
+    top: 3rem;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
-  }
-  .-left-40 {
-    left: calc(var(--spacing) * -40);
-  }
-  .-left-\[10rem\] {
-    left: calc(10rem * -1);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -209,26 +204,14 @@
   .mt-47\.5 {
     margin-top: calc(var(--spacing) * 47.5);
   }
-  .mt-272\.5 {
-    margin-top: calc(var(--spacing) * 272.5);
-  }
-  .mt-\[190\] {
-    margin-top: 190;
-  }
-  .mt-\[190px\] {
-    margin-top: 190px;
-  }
-  .mt-\[1090\] {
-    margin-top: 1090;
-  }
-  .mt-\[1090px\] {
-    margin-top: 1090px;
-  }
   .flex {
     display: flex;
   }
   .hidden {
     display: none;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
@@ -238,6 +221,9 @@
   }
   .w-10\/12 {
     width: calc(10 / 12 * 100%);
+  }
+  .w-11\/12 {
+    width: calc(11 / 12 * 100%);
   }
   .w-270 {
     width: calc(var(--spacing) * 270);
@@ -254,8 +240,20 @@
   .max-w-270 {
     max-width: calc(var(--spacing) * 270);
   }
+  .max-w-\[10\] {
+    max-width: 10;
+  }
+  .max-w-\[1080pc\] {
+    max-width: 1080pc;
+  }
+  .max-w-\[1080px\] {
+    max-width: 1080px;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .rotate-180 {
+    rotate: 180deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -334,6 +332,9 @@
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
   }
   .pr-7 {
     padding-right: calc(var(--spacing) * 7);
